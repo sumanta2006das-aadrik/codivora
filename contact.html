@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Codivora</title>
+
+    <meta name="description"
+          content="Contact Codivora for software development, mobile applications, web development and programming courses.">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a href="index.html"
+               class="logo">
+                C<span>O</span>DIVORA
+            </a>
+
+
+            <nav class="nav-menu">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="contact.html"
+                   class="active">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <button class="menu-btn"
+                    onclick="toggleMenu()">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= PAGE HERO ================= -->
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <p class="section-label">
+                GET IN TOUCH
+            </p>
+
+            <h1>
+                Let's Start<br>
+                a Conversation.
+            </h1>
+
+            <p>
+                Have a project idea or want to learn programming?
+                Get in touch with Codivora.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="section">
+
+        <div class="container contact-grid">
+
+
+            <!-- ================= CONTACT INFORMATION ================= -->
+
+            <div class="contact-information">
+
+                <p class="section-label">
+                    CONTACT CODIVORA
+                </p>
+
+                <h2>
+                    Let's Talk About<br>
+                    Your Idea.
+                </h2>
+
+                <p class="contact-intro">
+                    Whether you want to discuss a software project,
+                    mobile application, website or programming course,
+                    you can contact us through the enquiry form.
+                </p>
+
+
+                <!-- EMAIL -->
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        ✉
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Email
+                        </h3>
+
+                        <p>
+                            your-email@example.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        ☎
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Phone
+                        </h3>
+
+                        <p>
+                            +91 XXXXX XXXXX
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LOCATION -->
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Location
+                        </h3>
+
+                        <p>
+                            West Bengal, India
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================= CONTACT FORM ================= -->
+
+            <div class="contact-form-card">
+
+                <h2>
+                    Send an Enquiry
+                </h2>
+
+                <p>
+                    Fill in the form and tell us what you are looking for.
+                </p>
+
+
+                <form id="contactForm"
+                      onsubmit="submitContactForm(event)">
+
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number">
+
+                    </div>
+
+
+                    <!-- INTEREST -->
+
+                    <div class="form-group">
+
+                        <label for="interest">
+                            I am interested in
+                        </label>
+
+                        <select
+                            id="interest"
+                            name="interest"
+                            required>
+
+                            <option value="">
+                                Select an option
+                            </option>
+
+                            <option value="software">
+                                Software Development
+                            </option>
+
+                            <option value="mobile">
+                                Mobile App Development
+                            </option>
+
+                            <option value="web">
+                                Web Development
+                            </option>
+
+                            <option value="course">
+                                Programming Course
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Tell us about your requirement..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <!-- BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="btn primary-btn form-submit">
+
+                        Send Enquiry
+
+                    </button>
+
+
+                    <p id="formMessage"
+                       class="form-message">
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= QUICK CONTACT ================= -->
+
+    <section class="technology-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    WHAT CAN YOU CONTACT US ABOUT?
+                </p>
+
+                <h2>
+                    Choose Your Requirement
+                </h2>
+
+            </div>
+
+
+            <div class="quick-contact-grid">
+
+
+                <div class="quick-contact-card">
+
+                    <div>
+                        💻
+                    </div>
+
+                    <h3>
+                        Build Software
+                    </h3>
+
+                    <p>
+                        Discuss an idea for desktop or business software.
+                    </p>
+
+                </div>
+
+
+                <div class="quick-contact-card">
+
+                    <div>
+                        📱
+                    </div>
+
+                    <h3>
+                        Build an App
+                    </h3>
+
+                    <p>
+                        Discuss your mobile application requirements.
+                    </p>
+
+                </div>
+
+
+                <div class="quick-contact-card">
+
+                    <div>
+                        🌐
+                    </div>
+
+                    <h3>
+                        Build a Website
+                    </h3>
+
+                    <p>
+                        Discuss a website or web application project.
+                    </p>
+
+                </div>
+
+
+                <div class="quick-contact-card">
+
+                    <div>
+                        🎓
+                    </div>
+
+                    <h3>
+                        Learn Programming
+                    </h3>
+
+                    <p>
+                        Ask about programming and computer courses.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="project-cta">
+
+        <div class="container">
+
+            <div class="cta-content">
+
+                <div>
+
+                    <p class="section-label">
+                        CODIVORA
+                    </p>
+
+                    <h2>
+                        Code. Create.<br>
+                        Transform.
+                    </h2>
+
+                    <p>
+                        Technology and learning, built around practical ideas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <h2 class="footer-logo">
+                    CODIVORA
+                </h2>
+
+                <p>
+                    Code. Create. Transform.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2026 Codivora. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
