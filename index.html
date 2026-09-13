@@ -8,10 +8,15 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Codivora | Technology, Software & Programming Education</title>
+    <title>
+        Codivora | Software, Mobile Apps, Websites & Programming Courses
+    </title>
 
     <meta name="description"
-          content="Codivora is an independent technology and learning initiative focused on software development, mobile applications, web technologies and programming education.">
+          content="Codivora builds custom software, mobile applications and websites, while providing online programming courses in C, C++, Java, Python, Web Development and more.">
+
+    <meta name="keywords"
+          content="Codivora, software development, mobile app development, website development, web development, programming courses, online programming, Python, Java, C, C++, Django, SQL">
 
     <link rel="stylesheet"
           href="css/style.css">
@@ -22,1056 +27,1394 @@
 <body>
 
 
-    <!-- ================= HEADER ================= -->
+<!-- =====================================================
+     HEADER / NAVBAR
+     ===================================================== -->
 
-    <header class="header">
+<header class="header">
 
-        <div class="container navbar">
+    <div class="container navbar">
+
+        <a href="index.html"
+           class="logo"
+           aria-label="Codivora Home">
+
+            C<span>O</span>DIVORA
+
+        </a>
+
+
+        <nav class="nav-menu">
 
             <a href="index.html"
-               class="logo">
-                C<span>O</span>DIVORA
+               class="active">
+                Home
             </a>
 
+            <a href="about.html">
+                About
+            </a>
 
-            <nav class="nav-menu">
+            <a href="services.html">
+                Services
+            </a>
 
-                <a href="index.html"
-                   class="active">
-                    Home
-                </a>
+            <a href="courses.html">
+                Courses
+            </a>
 
-                <a href="about.html">
-                    About
-                </a>
+            <a href="projects.html">
+                Projects
+            </a>
 
-                <a href="services.html">
-                    Services
-                </a>
+            <a href="contact.html">
+                Contact
+            </a>
 
-                <a href="courses.html">
-                    Courses
-                </a>
-
-                <a href="projects.html">
-                    Projects
-                </a>
-
-                <a href="contact.html">
-                    Contact
-                </a>
-
-            </nav>
+        </nav>
 
 
-            <button class="menu-btn"
-                    onclick="toggleMenu()"
-                    aria-label="Open navigation menu">
+        <button class="menu-btn"
+                onclick="toggleMenu()"
+                aria-label="Open navigation menu">
 
-                ☰
+            ☰
 
-            </button>
+        </button>
 
-        </div>
+    </div>
 
-    </header>
+</header>
 
 
 
-    <!-- ================= HERO ================= -->
+<!-- =====================================================
+     HERO
+     ===================================================== -->
 
-    <section class="hero">
+<section class="hero">
 
-        <div class="container hero-content">
-
-
-            <div class="hero-text">
-
-                <p class="hero-small">
-                    TECHNOLOGY • SOFTWARE • EDUCATION
-                </p>
+    <div class="container hero-content">
 
 
-                <h1>
-                    Build Ideas.<br>
+        <!-- HERO TEXT -->
 
-                    <span>Learn Technology.</span>
-                </h1>
+        <div class="hero-text">
 
 
-                <p class="hero-description">
-
-                    Codivora is an independent technology and learning
-                    initiative focused on software development, mobile
-                    applications, web technologies and programming education.
-
-                </p>
+            <p class="hero-small">
+                SOFTWARE • APPS • WEBSITES • PROGRAMMING
+            </p>
 
 
-                <div class="hero-buttons">
+            <h1>
 
-                    <a href="services.html"
-                       class="btn primary-btn">
+                Build Your Ideas.<br>
 
-                        Explore Services
+                <span>Learn. Create. Grow.</span>
 
-                    </a>
+            </h1>
 
 
-                    <a href="courses.html"
-                       class="btn secondary-btn">
+            <p class="hero-description">
 
-                        Start Learning
+                Codivora builds custom software, mobile applications
+                and websites for real-world needs. We also provide
+                online programming education to help you learn
+                technology and build practical projects.
 
-                    </a>
+            </p>
+
+
+            <!-- MAIN SERVICES HIGHLIGHT -->
+
+            <div class="hero-services">
+
+                <div class="hero-service-item">
+
+                    <span>💻</span>
+
+                    <strong>
+                        Software
+                    </strong>
 
                 </div>
 
 
-                <div class="hero-trust">
+                <div class="hero-service-item">
 
-                    <div>
+                    <span>📱</span>
 
-                        <strong>
-                            Software
-                        </strong>
+                    <strong>
+                        Mobile Apps
+                    </strong>
 
-                        <span>
-                            Development
-                        </span>
-
-                    </div>
+                </div>
 
 
-                    <div>
+                <div class="hero-service-item">
 
-                        <strong>
-                            Mobile
-                        </strong>
+                    <span>🌐</span>
 
-                        <span>
-                            Applications
-                        </span>
+                    <strong>
+                        Websites
+                    </strong>
 
-                    </div>
+                </div>
 
 
-                    <div>
+                <div class="hero-service-item">
 
-                        <strong>
-                            Programming
-                        </strong>
+                    <span>🎓</span>
 
-                        <span>
-                            Education
-                        </span>
-
-                    </div>
+                    <strong>
+                        Online Courses
+                    </strong>
 
                 </div>
 
             </div>
 
 
+            <!-- HERO BUTTONS -->
 
-            <!-- ================= CODE CARD ================= -->
+            <div class="hero-buttons">
 
-            <div class="hero-card">
 
-                <div class="code-window">
-
-
-                    <div class="window-header">
-
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
-                    </div>
-
-
-                    <div class="code-content">
-
-                        <p>
-
-                            <span class="keyword">
-                                def
-                            </span>
-
-                            <span class="function">
-                                build_future
-                            </span>():
-
-                        </p>
-
-
-                        <p class="indent">
-                            learn()
-                        </p>
-
-
-                        <p class="indent">
-                            create()
-                        </p>
-
-
-                        <p class="indent">
-                            build()
-                        </p>
-
-
-                        <p class="indent">
-                            innovate()
-                        </p>
-
-
-                        <p>
-
-                            <span class="keyword">
-                                return
-                            </span>
-
-                            success
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="hero-card-caption">
-
-                    <span>
-                        CODE
-                    </span>
-
-                    <span>
-                        CREATE
-                    </span>
-
-                    <span>
-                        TRANSFORM
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= INTRODUCTION ================= -->
-
-    <section class="section">
-
-        <div class="container">
-
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    WELCOME TO CODIVORA
-                </p>
-
-
-                <h2>
-                    Technology Meets<br>
-                    Practical Learning.
-                </h2>
-
-
-                <p>
-
-                    Codivora brings together technology development
-                    and programming education under one independent
-                    digital brand.
-
-                </p>
-
-            </div>
-
-
-            <div class="intro-grid">
-
-
-                <div class="intro-card">
-
-                    <div class="intro-number">
-                        01
-                    </div>
-
-                    <h3>
-                        Build
-                    </h3>
-
-                    <p>
-                        Create useful software, websites and mobile
-                        applications based on practical ideas.
-                    </p>
-
-                </div>
-
-
-                <div class="intro-card">
-
-                    <div class="intro-number">
-                        02
-                    </div>
-
-                    <h3>
-                        Learn
-                    </h3>
-
-                    <p>
-                        Develop programming knowledge through structured
-                        lessons, examples, exercises and projects.
-                    </p>
-
-                </div>
-
-
-                <div class="intro-card">
-
-                    <div class="intro-number">
-                        03
-                    </div>
-
-                    <h3>
-                        Grow
-                    </h3>
-
-                    <p>
-                        Turn technical knowledge into practical skills
-                        through continuous learning and experimentation.
-                    </p>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= SERVICES ================= -->
-
-    <section class="technology-section">
-
-        <div class="container">
-
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    WHAT WE DO
-                </p>
-
-
-                <h2>
-                    Technology Solutions
-                </h2>
-
-
-                <p>
-                    Explore the areas where Codivora focuses on
-                    technology development and learning.
-                </p>
-
-            </div>
-
-
-            <div class="services-grid">
-
-
-                <div class="service-card">
-
-                    <div class="service-icon">
-                        💻
-                    </div>
-
-
-                    <h3>
-                        Software Development
-                    </h3>
-
-
-                    <p>
-                        Practical desktop and business software
-                        solutions designed around real requirements.
-                    </p>
-
-
-                    <a href="services.html">
-                        Learn More →
-                    </a>
-
-                </div>
-
-
-
-                <div class="service-card">
-
-                    <div class="service-icon">
-                        📱
-                    </div>
-
-
-                    <h3>
-                        Mobile App Development
-                    </h3>
-
-
-                    <p>
-                        Mobile application concepts designed to
-                        solve practical problems and simplify tasks.
-                    </p>
-
-
-                    <a href="services.html">
-                        Learn More →
-                    </a>
-
-                </div>
-
-
-
-                <div class="service-card">
-
-                    <div class="service-icon">
-                        🌐
-                    </div>
-
-
-                    <h3>
-                        Web Development
-                    </h3>
-
-
-                    <p>
-                        Responsive websites and web applications
-                        built with modern web technologies.
-                    </p>
-
-
-                    <a href="services.html">
-                        Learn More →
-                    </a>
-
-                </div>
-
-
-
-                <div class="service-card">
-
-                    <div class="service-icon">
-                        🎓
-                    </div>
-
-
-                    <h3>
-                        Programming Education
-                    </h3>
-
-
-                    <p>
-                        Structured programming education with
-                        examples, exercises and project-based learning.
-                    </p>
-
-
-                    <a href="courses.html">
-                        Explore Courses →
-                    </a>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= TECHNOLOGIES ================= -->
-
-    <section class="section">
-
-        <div class="container">
-
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    TECHNOLOGY STACK
-                </p>
-
-
-                <h2>
-                    Learn the Technologies<br>
-                    That Build the Digital World.
-                </h2>
-
-
-                <p>
-                    Explore programming languages, frameworks and
-                    computer science technologies through practical learning.
-                </p>
-
-            </div>
-
-
-            <div class="technology-grid">
-
-                <div>
-                    C
-                </div>
-
-                <div>
-                    C++
-                </div>
-
-                <div>
-                    Java
-                </div>
-
-                <div>
-                    Python
-                </div>
-
-                <div>
-                    Django
-                </div>
-
-                <div>
-                    HTML
-                </div>
-
-                <div>
-                    CSS
-                </div>
-
-                <div>
-                    JavaScript
-                </div>
-
-                <div>
-                    SQL
-                </div>
-
-                <div>
-                    Data Structures
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= COURSES ================= -->
-
-    <section class="technology-section">
-
-        <div class="container">
-
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    LEARNING PROGRAMS
-                </p>
-
-
-                <h2>
-                    Build Strong Programming Skills.
-                </h2>
-
-
-                <p>
-                    Structured learning paths designed to develop
-                    programming fundamentals and practical knowledge.
-                </p>
-
-            </div>
-
-
-            <div class="course-grid">
-
-
-                <div class="course-card">
-
-                    <span class="course-number">
-                        01
-                    </span>
-
-                    <h3>
-                        C Programming
-                    </h3>
-
-                    <p>
-                        Learn programming fundamentals, functions,
-                        arrays, pointers and file handling.
-                    </p>
-
-                    <a href="courses.html">
-                        Explore Course →
-                    </a>
-
-                </div>
-
-
-
-                <div class="course-card">
-
-                    <span class="course-number">
-                        02
-                    </span>
-
-                    <h3>
-                        Python Programming
-                    </h3>
-
-                    <p>
-                        Learn Python from fundamentals to practical
-                        application development.
-                    </p>
-
-                    <a href="courses.html">
-                        Explore Course →
-                    </a>
-
-                </div>
-
-
-
-                <div class="course-card">
-
-                    <span class="course-number">
-                        03
-                    </span>
-
-                    <h3>
-                        Java Programming
-                    </h3>
-
-                    <p>
-                        Learn object-oriented programming, GUI
-                        development and application programming.
-                    </p>
-
-                    <a href="courses.html">
-                        Explore Course →
-                    </a>
-
-                </div>
-
-
-
-                <div class="course-card">
-
-                    <span class="course-number">
-                        04
-                    </span>
-
-                    <h3>
-                        Web Development
-                    </h3>
-
-                    <p>
-                        Learn HTML, CSS, JavaScript and essential
-                        web development concepts.
-                    </p>
-
-                    <a href="courses.html">
-                        Explore Course →
-                    </a>
-
-                </div>
-
-
-            </div>
-
-
-            <div class="center-button">
-
-                <a href="courses.html"
+                <a href="contact.html"
                    class="btn primary-btn">
 
-                    View All Courses
+                    Start Your Project →
 
                 </a>
 
-            </div>
 
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= PROJECTS ================= -->
-
-    <section class="section">
-
-        <div class="container">
-
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    PROJECTS
-                </p>
-
-
-                <h2>
-                    From Ideas to<br>
-                    Practical Solutions.
-                </h2>
-
-
-                <p>
-                    Explore software, mobile and educational technology
-                    projects developed under the Codivora initiative.
-                </p>
-
-            </div>
-
-
-            <div class="home-project-grid">
-
-
-                <div class="home-project-card">
-
-                    <div class="home-project-icon">
-                        📚
-                    </div>
-
-
-                    <span>
-                        EDUCATION
-                    </span>
-
-
-                    <h3>
-                        Student Management System
-                    </h3>
-
-
-                    <p>
-                        A concept for managing students, courses,
-                        fees and academic records.
-                    </p>
-
-                </div>
-
-
-
-                <div class="home-project-card">
-
-                    <div class="home-project-icon">
-                        📱
-                    </div>
-
-
-                    <span>
-                        MOBILE
-                    </span>
-
-
-                    <h3>
-                        Educational Learning App
-                    </h3>
-
-
-                    <p>
-                        A learning platform concept for notes,
-                        practice questions and educational resources.
-                    </p>
-
-                </div>
-
-
-
-                <div class="home-project-card">
-
-                    <div class="home-project-icon">
-                        🌐
-                    </div>
-
-
-                    <span>
-                        WEB
-                    </span>
-
-
-                    <h3>
-                        Coaching Management Portal
-                    </h3>
-
-
-                    <p>
-                        A web platform concept for student,
-                        course and administrative management.
-                    </p>
-
-                </div>
-
-
-            </div>
-
-
-            <div class="center-button">
-
-                <a href="projects.html"
+                <a href="courses.html"
                    class="btn secondary-btn">
 
-                    View Projects
+                    Learn Programming
 
                 </a>
 
             </div>
 
-        </div>
 
-    </section>
+            <!-- TRUST TEXT -->
 
-
-
-    <!-- ================= WHY CODIVORA ================= -->
-
-    <section class="technology-section">
-
-        <div class="container">
-
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    WHY CODIVORA
-                </p>
-
-
-                <h2>
-                    Practical. Independent. Learning-Focused.
-                </h2>
-
-            </div>
-
-
-            <div class="why-grid">
-
-
-                <div class="why-card">
-
-                    <strong>
-                        01
-                    </strong>
-
-                    <h3>
-                        Practical Approach
-                    </h3>
-
-                    <p>
-                        Focus on examples, exercises and useful
-                        projects instead of theory alone.
-                    </p>
-
-                </div>
-
-
-
-                <div class="why-card">
-
-                    <strong>
-                        02
-                    </strong>
-
-                    <h3>
-                        Independent Initiative
-                    </h3>
-
-                    <p>
-                        Codivora is built as an independent technology
-                        and learning initiative.
-                    </p>
-
-                </div>
-
-
-
-                <div class="why-card">
-
-                    <strong>
-                        03
-                    </strong>
-
-                    <h3>
-                        Continuous Learning
-                    </h3>
-
-                    <p>
-                        Technology changes constantly, so learning
-                        and experimentation remain at the centre.
-                    </p>
-
-                </div>
-
-
-
-                <div class="why-card">
-
-                    <strong>
-                        04
-                    </strong>
-
-                    <h3>
-                        One Digital Brand
-                    </h3>
-
-                    <p>
-                        Software development and programming education
-                        come together under the Codivora brand.
-                    </p>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= CTA ================= -->
-
-    <section class="project-cta">
-
-        <div class="container">
-
-            <div class="cta-content">
+            <div class="hero-trust">
 
 
                 <div>
 
-                    <p class="section-label">
-                        HAVE AN IDEA?
-                    </p>
+                    <strong>
+                        Software
+                    </strong>
+
+                    <span>
+                        Development
+                    </span>
+
+                </div>
 
 
-                    <h2>
-                        Let's Turn Your Idea<br>
-                        Into Technology.
-                    </h2>
+                <div>
+
+                    <strong>
+                        Mobile
+                    </strong>
+
+                    <span>
+                        Applications
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Web
+                    </strong>
+
+                    <span>
+                        Development
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Programming
+                    </strong>
+
+                    <span>
+                        Education
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             HERO CODE CARD
+             ================================================= -->
+
+        <div class="hero-card">
+
+
+            <div class="code-window">
+
+
+                <div class="window-header">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+
+                <div class="code-content">
 
 
                     <p>
-                        Have an idea for a website, software,
-                        mobile application or learning project?
+
+                        <span class="keyword">
+                            def
+                        </span>
+
+                        <span class="function">
+                            build_idea
+                        </span>():
+
                     </p>
 
+
+                    <p class="indent">
+                        idea = imagine()
+                    </p>
+
+
+                    <p class="indent">
+                        learn()
+                    </p>
+
+
+                    <p class="indent">
+                        create()
+                    </p>
+
+
+                    <p class="indent">
+                        build()
+                    </p>
+
+
+                    <p class="indent">
+                        launch()
+                    </p>
+
+
+                    <p>
+
+                        <span class="keyword">
+                            return
+                        </span>
+
+                        success
+
+                    </p>
+
+
                 </div>
+
+            </div>
+
+
+            <div class="hero-card-caption">
+
+                <span>
+                    CODE
+                </span>
+
+                <span>
+                    CREATE
+                </span>
+
+                <span>
+                    LAUNCH
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     QUICK PURPOSE
+     ===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                WHAT IS CODIVORA?
+            </p>
+
+
+            <h2>
+                One Place to<br>
+                Build & Learn Technology.
+            </h2>
+
+
+            <p>
+
+                Whether you have an idea for a digital product
+                or want to learn programming, Codivora brings
+                technology development and practical learning
+                together under one digital brand.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="intro-grid">
+
+
+            <div class="intro-card">
+
+                <div class="intro-number">
+                    01
+                </div>
+
+
+                <h3>
+                    Need a Software?
+                </h3>
+
+
+                <p>
+
+                    Get custom software solutions designed around
+                    your business, educational or personal requirements.
+
+                </p>
+
+
+                <a href="services.html"
+                   class="card-link">
+
+                    Explore Software Services →
+
+                </a>
+
+            </div>
+
+
+
+            <div class="intro-card">
+
+                <div class="intro-number">
+                    02
+                </div>
+
+
+                <h3>
+                    Need an App or Website?
+                </h3>
+
+
+                <p>
+
+                    Turn your idea into a practical mobile application,
+                    website or web-based solution.
+
+                </p>
+
+
+                <a href="services.html"
+                   class="card-link">
+
+                    Explore Development Services →
+
+                </a>
+
+            </div>
+
+
+
+            <div class="intro-card">
+
+                <div class="intro-number">
+                    03
+                </div>
+
+
+                <h3>
+                    Want to Learn Programming?
+                </h3>
+
+
+                <p>
+
+                    Learn programming languages through structured
+                    lessons, examples, exercises and practical projects.
+
+                </p>
+
+
+                <a href="courses.html"
+                   class="card-link">
+
+                    Explore Online Courses →
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICES
+     ===================================================== -->
+
+<section class="technology-section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                DEVELOPMENT SERVICES
+            </p>
+
+
+            <h2>
+                We Build Digital Solutions.
+            </h2>
+
+
+            <p>
+
+                Have a project idea? Codivora can help transform
+                your requirements into useful software, mobile apps,
+                websites and web applications.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="services-grid">
+
+
+            <!-- SOFTWARE -->
+
+            <div class="service-card">
+
+
+                <div class="service-icon">
+                    💻
+                </div>
+
+
+                <span class="service-tag">
+                    SOFTWARE
+                </span>
+
+
+                <h3>
+                    Custom Software Development
+                </h3>
+
+
+                <p>
+
+                    Desktop and business software designed according
+                    to your specific requirements and workflow.
+
+                </p>
+
+
+                <a href="services.html">
+                    Explore Service →
+                </a>
+
+
+            </div>
+
+
+
+            <!-- MOBILE -->
+
+            <div class="service-card">
+
+
+                <div class="service-icon">
+                    📱
+                </div>
+
+
+                <span class="service-tag">
+                    MOBILE
+                </span>
+
+
+                <h3>
+                    Mobile App Development
+                </h3>
+
+
+                <p>
+
+                    Practical Android and cross-platform mobile
+                    application solutions for useful ideas and projects.
+
+                </p>
+
+
+                <a href="services.html">
+                    Explore Service →
+                </a>
+
+
+            </div>
+
+
+
+            <!-- WEBSITE -->
+
+            <div class="service-card">
+
+
+                <div class="service-icon">
+                    🌐
+                </div>
+
+
+                <span class="service-tag">
+                    WEB
+                </span>
+
+
+                <h3>
+                    Website & Web Development
+                </h3>
+
+
+                <p>
+
+                    Responsive websites and web applications designed
+                    for businesses, organisations and personal projects.
+
+                </p>
+
+
+                <a href="services.html">
+                    Explore Service →
+                </a>
+
+
+            </div>
+
+
+
+            <!-- BUSINESS / EDUCATION -->
+
+            <div class="service-card">
+
+
+                <div class="service-icon">
+                    ⚙️
+                </div>
+
+
+                <span class="service-tag">
+                    SOLUTIONS
+                </span>
+
+
+                <h3>
+                    Business & Educational Solutions
+                </h3>
+
+
+                <p>
+
+                    Custom digital systems for coaching centres,
+                    businesses, student management and other workflows.
+
+                </p>
+
+
+                <a href="services.html">
+                    Explore Service →
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="center-button">
+
+            <a href="services.html"
+               class="btn primary-btn">
+
+                View All Services →
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TECHNOLOGIES
+     ===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                TECHNOLOGY STACK
+            </p>
+
+
+            <h2>
+                Technologies We Build & Teach.
+            </h2>
+
+
+            <p>
+
+                Explore programming languages, frameworks,
+                databases and web technologies used for practical
+                development and learning.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="technology-grid">
+
+
+            <div>
+                C
+            </div>
+
+
+            <div>
+                C++
+            </div>
+
+
+            <div>
+                Java
+            </div>
+
+
+            <div>
+                Python
+            </div>
+
+
+            <div>
+                Django
+            </div>
+
+
+            <div>
+                HTML
+            </div>
+
+
+            <div>
+                CSS
+            </div>
+
+
+            <div>
+                JavaScript
+            </div>
+
+
+            <div>
+                SQL
+            </div>
+
+
+            <div>
+                Data Structures
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROGRAMMING COURSES
+     ===================================================== -->
+
+<section class="technology-section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                ONLINE PROGRAMMING EDUCATION
+            </p>
+
+
+            <h2>
+                Learn Programming.<br>
+                Build Real Projects.
+            </h2>
+
+
+            <p>
+
+                Learn programming languages through structured
+                online lessons, practical examples, exercises
+                and project-based learning.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="course-grid">
+
+
+            <!-- C -->
+
+            <div class="course-card">
+
+
+                <span class="course-number">
+                    01
+                </span>
+
+
+                <h3>
+                    C Programming
+                </h3>
+
+
+                <p>
+
+                    Start with programming fundamentals and progress
+                    through functions, arrays, pointers and file handling.
+
+                </p>
+
+
+                <a href="courses.html">
+                    Explore Course →
+                </a>
+
+            </div>
+
+
+
+            <!-- PYTHON -->
+
+            <div class="course-card">
+
+
+                <span class="course-number">
+                    02
+                </span>
+
+
+                <h3>
+                    Python Programming
+                </h3>
+
+
+                <p>
+
+                    Learn Python from fundamentals to practical
+                    programming, data handling and application development.
+
+                </p>
+
+
+                <a href="courses.html">
+                    Explore Course →
+                </a>
+
+            </div>
+
+
+
+            <!-- JAVA -->
+
+            <div class="course-card">
+
+
+                <span class="course-number">
+                    03
+                </span>
+
+
+                <h3>
+                    Java Programming
+                </h3>
+
+
+                <p>
+
+                    Develop strong object-oriented programming knowledge
+                    and learn practical Java application concepts.
+
+                </p>
+
+
+                <a href="courses.html">
+                    Explore Course →
+                </a>
+
+            </div>
+
+
+
+            <!-- WEB -->
+
+            <div class="course-card">
+
+
+                <span class="course-number">
+                    04
+                </span>
+
+
+                <h3>
+                    Web Development
+                </h3>
+
+
+                <p>
+
+                    Learn HTML, CSS, JavaScript and essential concepts
+                    required to build modern responsive websites.
+
+                </p>
+
+
+                <a href="courses.html">
+                    Explore Course →
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="center-button">
+
+            <a href="courses.html"
+               class="btn primary-btn">
+
+                View All Programming Courses →
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROJECTS
+     ===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                PROJECTS
+            </p>
+
+
+            <h2>
+                From Ideas to<br>
+                Practical Solutions.
+            </h2>
+
+
+            <p>
+
+                Explore software, mobile and educational technology
+                projects developed under the Codivora initiative.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="home-project-grid">
+
+
+            <div class="home-project-card">
+
+
+                <div class="home-project-icon">
+                    📚
+                </div>
+
+
+                <span>
+                    EDUCATION
+                </span>
+
+
+                <h3>
+                    Student Management System
+                </h3>
+
+
+                <p>
+
+                    A concept for managing students, courses,
+                    fees and academic records.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="home-project-card">
+
+
+                <div class="home-project-icon">
+                    📱
+                </div>
+
+
+                <span>
+                    MOBILE
+                </span>
+
+
+                <h3>
+                    Educational Learning App
+                </h3>
+
+
+                <p>
+
+                    A learning platform concept for notes,
+                    practice questions and educational resources.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="home-project-card">
+
+
+                <div class="home-project-icon">
+                    🌐
+                </div>
+
+
+                <span>
+                    WEB
+                </span>
+
+
+                <h3>
+                    Coaching Management Portal
+                </h3>
+
+
+                <p>
+
+                    A web platform concept for student,
+                    course and administrative management.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="center-button">
+
+            <a href="projects.html"
+               class="btn secondary-btn">
+
+                View Projects →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WHY CODIVORA
+     ===================================================== -->
+
+<section class="technology-section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                WHY CODIVORA
+            </p>
+
+
+            <h2>
+                Practical. Independent. Learning-Focused.
+            </h2>
+
+
+            <p>
+
+                Our focus is simple: build useful technology
+                and make programming knowledge practical.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="why-grid">
+
+
+            <div class="why-card">
+
+                <strong>
+                    01
+                </strong>
+
+
+                <h3>
+                    Practical Development
+                </h3>
+
+
+                <p>
+
+                    We focus on real requirements and practical
+                    software, mobile and web solutions.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="why-card">
+
+                <strong>
+                    02
+                </strong>
+
+
+                <h3>
+                    Learn by Doing
+                </h3>
+
+
+                <p>
+
+                    Programming education focuses on examples,
+                    exercises and practical projects.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="why-card">
+
+                <strong>
+                    03
+                </strong>
+
+
+                <h3>
+                    Continuous Learning
+                </h3>
+
+
+                <p>
+
+                    Technology changes constantly, so learning
+                    and experimentation remain important.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="why-card">
+
+                <strong>
+                    04
+                </strong>
+
+
+                <h3>
+                    One Digital Brand
+                </h3>
+
+
+                <p>
+
+                    Technology development and programming
+                    education come together under Codivora.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+     ===================================================== -->
+
+<section class="project-cta">
+
+    <div class="container">
+
+
+        <div class="cta-content">
+
+
+            <div>
+
+
+                <p class="section-label">
+                    HAVE A PROJECT IDEA?
+                </p>
+
+
+                <h2>
+                    Need a Website,<br>
+                    Software or Mobile App?
+                </h2>
+
+
+                <p>
+
+                    Tell us what you want to build.
+                    Codivora can help turn your idea
+                    into a practical digital solution.
+
+                </p>
+
+
+            </div>
+
+
+            <div class="cta-buttons">
 
 
                 <a href="contact.html"
                    class="btn light-btn">
 
-                    Contact Codivora
+                    Request a Project →
 
                 </a>
 
-            </div>
 
-        </div>
+                <a href="courses.html"
+                   class="btn cta-outline-btn">
 
-    </section>
+                    Learn Programming →
 
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer class="footer">
-
-        <div class="container footer-content">
-
-
-            <div>
-
-                <h2 class="footer-logo">
-                    CODIVORA
-                </h2>
-
-
-                <p>
-                    Code. Create. Transform.
-                </p>
-
-
-                <p class="footer-description">
-                    Technology, software development and
-                    programming education.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <a href="index.html">
-                    Home
                 </a>
 
-                <a href="about.html">
-                    About
-                </a>
-
-                <a href="services.html">
-                    Services
-                </a>
-
-                <a href="courses.html">
-                    Courses
-                </a>
-
-                <a href="projects.html">
-                    Projects
-                </a>
-
-                <a href="contact.html">
-                    Contact
-                </a>
 
             </div>
 
 
         </div>
 
+    </div>
 
-        <div class="copyright">
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-content">
+
+
+        <div>
+
+
+            <h2 class="footer-logo">
+                CODIVORA
+            </h2>
+
 
             <p>
-                © 2026 Codivora. All rights reserved.
+                Code. Create. Transform.
             </p>
+
+
+            <p class="footer-description">
+
+                Software development, mobile applications,
+                web development and online programming education.
+
+            </p>
+
 
         </div>
 
-    </footer>
+
+
+        <div class="footer-links">
+
+
+            <a href="index.html">
+                Home
+            </a>
+
+
+            <a href="about.html">
+                About
+            </a>
+
+
+            <a href="services.html">
+                Services
+            </a>
+
+
+            <a href="courses.html">
+                Courses
+            </a>
+
+
+            <a href="projects.html">
+                Projects
+            </a>
+
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+
+        </div>
+
+
+    </div>
 
 
 
-    <script src="js/script.js"></script>
+    <div class="copyright">
+
+        <p>
+            © 2026 Codivora. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<script src="js/script.js"></script>
 
 </body>
 
