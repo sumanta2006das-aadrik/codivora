@@ -8,13 +8,19 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+          content="Explore Codivora projects in software development, mobile applications, web applications and educational technology.">
+
+    <meta name="keywords"
+          content="Codivora projects, software projects, mobile apps, web applications, EdTech, student management system">
+
     <title>Projects | Codivora</title>
 
-    <meta name="description"
-          content="Explore software, mobile application and web development projects by Codivora.">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet"
-          href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
 </head>
 
@@ -22,19 +28,24 @@
 <body>
 
 
-    <!-- ================= HEADER ================= -->
+    <!-- =====================================================
+         HEADER / NAVBAR
+    ====================================================== -->
 
     <header class="header">
 
         <div class="container navbar">
 
-            <a href="index.html"
-               class="logo">
+            <!-- LOGO -->
+
+            <a href="index.html" class="logo">
                 C<span>O</span>DIVORA
             </a>
 
 
-            <nav class="nav-menu">
+            <!-- NAVIGATION -->
+
+            <nav class="nav-menu" id="navMenu">
 
                 <a href="index.html">
                     Home
@@ -52,8 +63,7 @@
                     Courses
                 </a>
 
-                <a href="projects.html"
-                   class="active">
+                <a href="projects.html" class="active">
                     Projects
                 </a>
 
@@ -64,9 +74,16 @@
             </nav>
 
 
-            <button class="menu-btn"
-                    onclick="toggleMenu()">
+            <!-- MOBILE MENU BUTTON -->
+
+            <button
+                class="menu-btn"
+                type="button"
+                onclick="toggleMenu()"
+                aria-label="Toggle navigation">
+
                 ☰
+
             </button>
 
         </div>
@@ -75,25 +92,33 @@
 
 
 
-    <!-- ================= PAGE HERO ================= -->
+    <!-- =====================================================
+         PROJECTS HERO
+    ====================================================== -->
 
     <section class="page-hero">
 
         <div class="container">
 
-            <p class="section-label">
-                OUR PROJECTS
-            </p>
+            <div class="page-hero-content">
 
-            <h1>
-                Ideas Into<br>
-                Digital Solutions.
-            </h1>
+                <span class="section-label">
+                    OUR PROJECTS
+                </span>
 
-            <p>
-                Explore software, web and mobile application projects
-                developed as part of the Codivora technology initiative.
-            </p>
+                <h1>
+                    Ideas Into
+                    <br>
+                    <span>Digital Solutions.</span>
+                </h1>
+
+                <p>
+                    Explore software, web and mobile application
+                    projects developed as part of the Codivora
+                    technology initiative.
+                </p>
+
+            </div>
 
         </div>
 
@@ -101,17 +126,22 @@
 
 
 
-    <!-- ================= PROJECTS ================= -->
+    <!-- =====================================================
+         PROJECT PORTFOLIO
+    ====================================================== -->
 
     <section class="section">
 
         <div class="container">
 
+
+            <!-- SECTION HEADING -->
+
             <div class="section-heading">
 
-                <p class="section-label">
+                <span class="section-label">
                     PROJECT PORTFOLIO
-                </p>
+                </span>
 
                 <h2>
                     What We Are Building
@@ -125,17 +155,24 @@
             </div>
 
 
+
+            <!-- PROJECT GRID -->
+
             <div class="project-grid">
 
 
-                <!-- PROJECT 1 -->
+                <!-- =================================================
+                     PROJECT 01
+                ================================================== -->
 
                 <div class="project-card">
 
                     <div class="project-visual">
-                        <span>
+
+                        <span class="project-icon">
                             📚
                         </span>
+
                     </div>
 
 
@@ -168,28 +205,24 @@
 
                         </div>
 
-
-                        <a href="#"
-                           class="project-link">
-
-                            Project Details →
-
-                        </a>
-
                     </div>
 
                 </div>
 
 
 
-                <!-- PROJECT 2 -->
+                <!-- =================================================
+                     PROJECT 02
+                ================================================== -->
 
                 <div class="project-card">
 
                     <div class="project-visual">
-                        <span>
+
+                        <span class="project-icon">
                             📱
                         </span>
+
                     </div>
 
 
@@ -204,9 +237,9 @@
                         </h3>
 
                         <p>
-                            A mobile learning platform designed to provide
-                            students with notes, practice questions,
-                            courses and educational resources.
+                            A mobile learning platform designed to
+                            provide students with notes, practice
+                            questions, courses and educational resources.
                         </p>
 
 
@@ -222,28 +255,24 @@
 
                         </div>
 
-
-                        <a href="#"
-                           class="project-link">
-
-                            Project Details →
-
-                        </a>
-
                     </div>
 
                 </div>
 
 
 
-                <!-- PROJECT 3 -->
+                <!-- =================================================
+                     PROJECT 03
+                ================================================== -->
 
                 <div class="project-card">
 
                     <div class="project-visual">
-                        <span>
+
+                        <span class="project-icon">
                             🌐
                         </span>
+
                     </div>
 
 
@@ -276,28 +305,24 @@
 
                         </div>
 
-
-                        <a href="#"
-                           class="project-link">
-
-                            Project Details →
-
-                        </a>
-
                     </div>
 
                 </div>
 
 
 
-                <!-- PROJECT 4 -->
+                <!-- =================================================
+                     PROJECT 04
+                ================================================== -->
 
                 <div class="project-card">
 
                     <div class="project-visual">
-                        <span>
+
+                        <span class="project-icon">
                             💻
                         </span>
+
                     </div>
 
 
@@ -312,9 +337,9 @@
                         </h3>
 
                         <p>
-                            Educational software designed to help students
-                            learn computer fundamentals and programming
-                            concepts interactively.
+                            Educational software designed to help
+                            students learn computer fundamentals
+                            and programming concepts interactively.
                         </p>
 
 
@@ -330,28 +355,24 @@
 
                         </div>
 
-
-                        <a href="#"
-                           class="project-link">
-
-                            Project Details →
-
-                        </a>
-
                     </div>
 
                 </div>
 
 
 
-                <!-- PROJECT 5 -->
+                <!-- =================================================
+                     PROJECT 05
+                ================================================== -->
 
                 <div class="project-card">
 
                     <div class="project-visual">
-                        <span>
+
+                        <span class="project-icon">
                             🧮
                         </span>
+
                     </div>
 
 
@@ -366,9 +387,10 @@
                         </h3>
 
                         <p>
-                            An interactive educational application designed
-                            to help students understand physics concepts
-                            through visual demonstrations and calculations.
+                            An interactive educational application
+                            designed to help students understand
+                            physics concepts through visual
+                            demonstrations and calculations.
                         </p>
 
 
@@ -384,28 +406,24 @@
 
                         </div>
 
-
-                        <a href="#"
-                           class="project-link">
-
-                            Project Details →
-
-                        </a>
-
                     </div>
 
                 </div>
 
 
 
-                <!-- PROJECT 6 -->
+                <!-- =================================================
+                     PROJECT 06
+                ================================================== -->
 
                 <div class="project-card">
 
                     <div class="project-visual">
-                        <span>
+
+                        <span class="project-icon">
                             📝
                         </span>
+
                     </div>
 
 
@@ -438,14 +456,6 @@
 
                         </div>
 
-
-                        <a href="#"
-                           class="project-link">
-
-                            Project Details →
-
-                        </a>
-
                     </div>
 
                 </div>
@@ -459,31 +469,46 @@
 
 
 
-    <!-- ================= PROJECT CATEGORIES ================= -->
+    <!-- =====================================================
+         PROJECT CATEGORIES
+    ====================================================== -->
 
-    <section class="technology-section">
+    <section class="section technology-section">
 
         <div class="container">
 
+
+            <!-- SECTION HEADING -->
+
             <div class="section-heading">
 
-                <p class="section-label">
+                <span class="section-label">
                     PROJECT CATEGORIES
-                </p>
+                </span>
 
                 <h2>
                     Areas We Build In
                 </h2>
 
+                <p>
+                    Codivora explores different areas of software,
+                    application development and educational technology.
+                </p>
+
             </div>
 
+
+
+            <!-- CATEGORY GRID -->
 
             <div class="project-category-grid">
 
 
+                <!-- SOFTWARE -->
+
                 <div class="project-category-card">
 
-                    <div>
+                    <div class="category-icon">
                         💻
                     </div>
 
@@ -492,15 +517,19 @@
                     </h3>
 
                     <p>
-                        Desktop and business applications.
+                        Desktop and business applications designed
+                        for practical requirements.
                     </p>
 
                 </div>
 
 
+
+                <!-- MOBILE -->
+
                 <div class="project-category-card">
 
-                    <div>
+                    <div class="category-icon">
                         📱
                     </div>
 
@@ -509,15 +538,19 @@
                     </h3>
 
                     <p>
-                        Android and mobile applications.
+                        Mobile application concepts and solutions
+                        focused on useful digital experiences.
                     </p>
 
                 </div>
 
 
+
+                <!-- WEB -->
+
                 <div class="project-category-card">
 
-                    <div>
+                    <div class="category-icon">
                         🌐
                     </div>
 
@@ -526,15 +559,19 @@
                     </h3>
 
                     <p>
-                        Websites and web applications.
+                        Responsive websites and web applications
+                        using modern technologies.
                     </p>
 
                 </div>
 
 
+
+                <!-- EDTECH -->
+
                 <div class="project-category-card">
 
-                    <div>
+                    <div class="category-icon">
                         🎓
                     </div>
 
@@ -543,7 +580,8 @@
                     </h3>
 
                     <p>
-                        Educational technology solutions.
+                        Educational technology solutions designed
+                        to support learning and teaching.
                     </p>
 
                 </div>
@@ -557,7 +595,9 @@
 
 
 
-    <!-- ================= FUTURE PROJECTS ================= -->
+    <!-- =====================================================
+         FUTURE PROJECTS
+    ====================================================== -->
 
     <section class="section">
 
@@ -565,32 +605,37 @@
 
             <div class="future-project">
 
-                <div>
 
-                    <p class="section-label">
-                        BUILD WITH CODIVORA
-                    </p>
+                <span class="section-label">
+                    BUILD WITH CODIVORA
+                </span>
 
-                    <h2>
-                        Your Idea Could Be<br>
-                        Our Next Project.
-                    </h2>
 
-                    <p>
-                        Have an idea for a software application,
-                        website or mobile app? Let's explore it
-                        and turn it into a practical digital solution.
-                    </p>
+                <h2>
+                    Your Idea Could Be
+                    <br>
+                    Our Next Project.
+                </h2>
+
+
+                <p>
+                    Have an idea for a software application, website
+                    or mobile app? Let's explore it and turn it into
+                    a practical digital solution.
+                </p>
+
+
+                <div class="cta-buttons">
+
+                    <a
+                        href="contact.html"
+                        class="btn primary-btn">
+
+                        Start a Conversation →
+
+                    </a>
 
                 </div>
-
-
-                <a href="contact.html"
-                   class="btn primary-btn">
-
-                    Start a Conversation
-
-                </a>
 
             </div>
 
@@ -600,97 +645,80 @@
 
 
 
-    <!-- ================= CTA ================= -->
-
-    <section class="project-cta">
-
-        <div class="container">
-
-            <div class="cta-content">
-
-                <div>
-
-                    <p class="section-label">
-                        HAVE AN IDEA?
-                    </p>
-
-                    <h2>
-                        Let's Build Something Useful.
-                    </h2>
-
-                    <p>
-                        Tell us about your project idea.
-                    </p>
-
-                </div>
-
-
-                <a href="contact.html"
-                   class="btn light-btn">
-
-                    Contact Codivora
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= FOOTER ================= -->
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
     <footer class="footer">
 
-        <div class="container footer-content">
+        <div class="container">
 
-            <div>
+            <div class="footer-content">
 
-                <h2 class="footer-logo">
-                    CODIVORA
-                </h2>
+
+                <!-- BRAND -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="footer-logo">
+
+                        C<span>O</span>DIVORA
+
+                    </a>
+
+                    <p class="footer-description">
+                        Code. Create. Transform.
+                    </p>
+
+                </div>
+
+
+
+                <!-- QUICK LINKS -->
+
+                <div class="footer-links">
+
+                    <h3>
+                        Quick Links
+                    </h3>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="about.html">
+                        About
+                    </a>
+
+                    <a href="services.html">
+                        Services
+                    </a>
+
+                    <a href="courses.html">
+                        Courses
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- COPYRIGHT -->
+
+            <div class="copyright">
 
                 <p>
-                    Code. Create. Transform.
+                    © 2026 Codivora. All rights reserved.
                 </p>
 
             </div>
-
-
-            <div class="footer-links">
-
-                <a href="index.html">
-                    Home
-                </a>
-
-                <a href="about.html">
-                    About
-                </a>
-
-                <a href="services.html">
-                    Services
-                </a>
-
-                <a href="courses.html">
-                    Courses
-                </a>
-
-                <a href="contact.html">
-                    Contact
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="copyright">
-
-            <p>
-                © 2026 Codivora. All rights reserved.
-            </p>
 
         </div>
 
@@ -698,7 +726,12 @@
 
 
 
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
     <script src="js/script.js"></script>
+
 
 </body>
 
