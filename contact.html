@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact | Codivora</title>
 
     <meta name="description"
-          content="Contact Codivora for software development, mobile applications, web development and programming courses.">
+          content="Contact Codivora for software development, mobile applications, websites and programming courses.">
 
-    <link rel="stylesheet"
-          href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 
-
 <body>
-
 
     <!-- ================= HEADER ================= -->
 
@@ -28,51 +21,37 @@
 
         <div class="container navbar">
 
-            <a href="index.html"
-               class="logo">
+            <a href="index.html" class="logo">
                 C<span>O</span>DIVORA
             </a>
 
+            <nav class="nav-menu" id="navMenu">
 
-            <nav class="nav-menu">
+                <a href="index.html">Home</a>
 
-                <a href="index.html">
-                    Home
-                </a>
+                <a href="about.html">About</a>
 
-                <a href="about.html">
-                    About
-                </a>
+                <a href="services.html">Services</a>
 
-                <a href="services.html">
-                    Services
-                </a>
+                <a href="courses.html">Courses</a>
 
-                <a href="courses.html">
-                    Courses
-                </a>
+                <a href="projects.html">Projects</a>
 
-                <a href="projects.html">
-                    Projects
-                </a>
-
-                <a href="contact.html"
-                   class="active">
-                    Contact
-                </a>
+                <a href="contact.html" class="active">Contact</a>
 
             </nav>
 
-
-            <button class="menu-btn"
-                    onclick="toggleMenu()">
+            <button
+                class="menu-btn"
+                type="button"
+                onclick="toggleMenu()"
+                aria-label="Toggle navigation">
                 ☰
             </button>
 
         </div>
 
     </header>
-
 
 
     <!-- ================= PAGE HERO ================= -->
@@ -100,7 +79,6 @@
     </section>
 
 
-
     <!-- ================= CONTACT SECTION ================= -->
 
     <section class="section">
@@ -108,7 +86,7 @@
         <div class="container contact-grid">
 
 
-            <!-- ================= CONTACT INFORMATION ================= -->
+            <!-- CONTACT INFORMATION -->
 
             <div class="contact-information">
 
@@ -121,7 +99,7 @@
                     Your Idea.
                 </h2>
 
-                <p class="contact-intro">
+                <p class="contact-description">
                     Whether you want to discuss a software project,
                     mobile application, website or programming course,
                     you can contact us through the enquiry form.
@@ -196,17 +174,19 @@
 
                 </div>
 
-
             </div>
-
 
 
             <!-- ================= CONTACT FORM ================= -->
 
             <div class="contact-form-card">
 
+                <p class="section-label">
+                    SEND AN ENQUIRY
+                </p>
+
                 <h2>
-                    Send an Enquiry
+                    Tell Us About Your Requirement
                 </h2>
 
                 <p>
@@ -214,8 +194,7 @@
                 </p>
 
 
-                <form id="contactForm"
-                      onsubmit="submitContactForm(event)">
+                <form id="contactForm">
 
 
                     <!-- NAME -->
@@ -271,17 +250,17 @@
                     </div>
 
 
-                    <!-- INTEREST -->
+                    <!-- REQUIREMENT -->
 
                     <div class="form-group">
 
-                        <label for="interest">
+                        <label for="requirement">
                             I am interested in
                         </label>
 
                         <select
-                            id="interest"
-                            name="interest"
+                            id="requirement"
+                            name="requirement"
                             required>
 
                             <option value="">
@@ -296,16 +275,16 @@
                                 Mobile App Development
                             </option>
 
-                            <option value="web">
-                                Web Development
+                            <option value="website">
+                                Website Development
                             </option>
 
-                            <option value="course">
-                                Programming Course
+                            <option value="programming">
+                                Programming Courses
                             </option>
 
                             <option value="other">
-                                Other
+                                Other Enquiry
                             </option>
 
                         </select>
@@ -331,7 +310,7 @@
                     </div>
 
 
-                    <!-- BUTTON -->
+                    <!-- SUBMIT -->
 
                     <button
                         type="submit"
@@ -342,8 +321,12 @@
                     </button>
 
 
-                    <p id="formMessage"
-                       class="form-message">
+                    <!-- FORM MESSAGE -->
+
+                    <p
+                        id="formMessage"
+                        class="form-message"
+                        aria-live="polite">
                     </p>
 
                 </form>
@@ -355,10 +338,9 @@
     </section>
 
 
+    <!-- ================= REQUIREMENTS ================= -->
 
-    <!-- ================= QUICK CONTACT ================= -->
-
-    <section class="technology-section">
+    <section class="section">
 
         <div class="container">
 
@@ -378,9 +360,11 @@
             <div class="quick-contact-grid">
 
 
+                <!-- SOFTWARE -->
+
                 <div class="quick-contact-card">
 
-                    <div>
+                    <div class="service-icon">
                         💻
                     </div>
 
@@ -389,15 +373,18 @@
                     </h3>
 
                     <p>
-                        Discuss an idea for desktop or business software.
+                        Discuss an idea for desktop,
+                        educational or business software.
                     </p>
 
                 </div>
 
 
+                <!-- MOBILE -->
+
                 <div class="quick-contact-card">
 
-                    <div>
+                    <div class="service-icon">
                         📱
                     </div>
 
@@ -406,15 +393,18 @@
                     </h3>
 
                     <p>
-                        Discuss your mobile application requirements.
+                        Discuss your mobile application
+                        requirements and ideas.
                     </p>
 
                 </div>
 
 
+                <!-- WEBSITE -->
+
                 <div class="quick-contact-card">
 
-                    <div>
+                    <div class="service-icon">
                         🌐
                     </div>
 
@@ -423,15 +413,18 @@
                     </h3>
 
                     <p>
-                        Discuss a website or web application project.
+                        Discuss a website or web
+                        application project.
                     </p>
 
                 </div>
 
 
+                <!-- LEARNING -->
+
                 <div class="quick-contact-card">
 
-                    <div>
+                    <div class="service-icon">
                         🎓
                     </div>
 
@@ -440,51 +433,47 @@
                     </h3>
 
                     <p>
-                        Ask about programming and computer courses.
+                        Ask about programming,
+                        computer and technology courses.
                     </p>
 
                 </div>
-
 
             </div>
 
         </div>
 
     </section>
-
 
 
     <!-- ================= CTA ================= -->
 
     <section class="project-cta">
 
-        <div class="container">
+        <div class="container cta-content">
 
-            <div class="cta-content">
+            <p class="section-label">
+                BUILD WITH CODIVORA
+            </p>
 
-                <div>
+            <h2>
+                Have an Idea?
+            </h2>
 
-                    <p class="section-label">
-                        CODIVORA
-                    </p>
+            <p>
+                Let's turn your idea into a practical
+                digital solution.
+            </p>
 
-                    <h2>
-                        Code. Create.<br>
-                        Transform.
-                    </h2>
-
-                    <p>
-                        Technology and learning, built around practical ideas.
-                    </p>
-
-                </div>
-
-            </div>
+            <a
+                href="services.html"
+                class="btn light-btn">
+                Explore Our Services
+            </a>
 
         </div>
 
     </section>
-
 
 
     <!-- ================= FOOTER ================= -->
@@ -493,14 +482,20 @@
 
         <div class="container footer-content">
 
-            <div>
 
-                <h2 class="footer-logo">
-                    CODIVORA
-                </h2>
+            <div class="footer-description">
+
+                <a href="index.html" class="footer-logo">
+                    C<span>O</span>DIVORA
+                </a>
 
                 <p>
                     Code. Create. Transform.
+                </p>
+
+                <p>
+                    Technology and learning,
+                    built around practical ideas.
                 </p>
 
             </div>
@@ -528,12 +523,16 @@
                     Projects
                 </a>
 
+                <a href="contact.html">
+                    Contact
+                </a>
+
             </div>
 
         </div>
 
 
-        <div class="copyright">
+        <div class="container copyright">
 
             <p>
                 © 2026 Codivora. All rights reserved.
@@ -544,9 +543,30 @@
     </footer>
 
 
+    <!-- ================= JAVASCRIPT ================= -->
 
     <script src="js/script.js"></script>
 
-</body>
 
+    <!-- Contact Form Demo Handler -->
+
+    <script>
+
+        const contactForm = document.getElementById("contactForm");
+        const formMessage = document.getElementById("formMessage");
+
+        contactForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            formMessage.textContent =
+                "Thank you! Your enquiry has been recorded for this demo.";
+
+            contactForm.reset();
+
+        });
+
+    </script>
+
+</body>
 </html>
