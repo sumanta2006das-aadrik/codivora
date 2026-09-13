@@ -8,13 +8,19 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+          content="Learn programming and computer science with Codivora. Explore C, C++, Java, Python, Web Development, Django, DBMS, SQL and Data Structures courses.">
+
+    <meta name="keywords"
+          content="Codivora courses, C programming, C++, Java, Python, Web Development, Django, DBMS, SQL, Data Structures">
+
     <title>Courses | Codivora</title>
 
-    <meta name="description"
-          content="Explore programming and computer science courses offered by Codivora.">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet"
-          href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
 </head>
 
@@ -22,19 +28,24 @@
 <body>
 
 
-    <!-- ================= HEADER ================= -->
+    <!-- =====================================================
+         HEADER / NAVBAR
+    ====================================================== -->
 
     <header class="header">
 
         <div class="container navbar">
 
-            <a href="index.html"
-               class="logo">
+            <!-- LOGO -->
+
+            <a href="index.html" class="logo">
                 C<span>O</span>DIVORA
             </a>
 
 
-            <nav class="nav-menu">
+            <!-- NAVIGATION -->
+
+            <nav class="nav-menu" id="navMenu">
 
                 <a href="index.html">
                     Home
@@ -48,8 +59,7 @@
                     Services
                 </a>
 
-                <a href="courses.html"
-                   class="active">
+                <a href="courses.html" class="active">
                     Courses
                 </a>
 
@@ -64,9 +74,16 @@
             </nav>
 
 
-            <button class="menu-btn"
-                    onclick="toggleMenu()">
+            <!-- MOBILE MENU BUTTON -->
+
+            <button
+                class="menu-btn"
+                type="button"
+                onclick="toggleMenu()"
+                aria-label="Toggle navigation">
+
                 ☰
+
             </button>
 
         </div>
@@ -75,26 +92,33 @@
 
 
 
-    <!-- ================= PAGE HERO ================= -->
+    <!-- =====================================================
+         COURSES HERO
+    ====================================================== -->
 
     <section class="page-hero">
 
         <div class="container">
 
-            <p class="section-label">
-                CODIVORA LEARNING
-            </p>
+            <div class="page-hero-content">
 
-            <h1>
-                Learn Programming.<br>
-                Build Real Skills.
-            </h1>
+                <span class="section-label">
+                    CODIVORA LEARNING
+                </span>
 
-            <p>
-                Structured programming and computer science courses
-                designed to help learners understand concepts,
-                solve problems and build practical projects.
-            </p>
+                <h1>
+                    Learn Programming.
+                    <br>
+                    <span>Build Real Skills.</span>
+                </h1>
+
+                <p>
+                    Structured programming and computer science courses
+                    designed to help learners understand concepts,
+                    solve problems and build practical projects.
+                </p>
+
+            </div>
 
         </div>
 
@@ -102,17 +126,22 @@
 
 
 
-    <!-- ================= COURSE INTRO ================= -->
+    <!-- =====================================================
+         OUR COURSES
+    ====================================================== -->
 
     <section class="section">
 
         <div class="container">
 
+
+            <!-- SECTION HEADING -->
+
             <div class="section-heading">
 
-                <p class="section-label">
+                <span class="section-label">
                     OUR COURSES
-                </p>
+                </span>
 
                 <h2>
                     Learn. Practice. Build.
@@ -126,10 +155,17 @@
             </div>
 
 
+
+            <!-- =================================================
+                 COURSE GRID
+            ================================================== -->
+
             <div class="course-detail-grid">
 
 
-                <!-- C -->
+                <!-- =================================================
+                     COURSE 01 - C
+                ================================================== -->
 
                 <div class="course-detail-card">
 
@@ -146,8 +182,8 @@
                     </h3>
 
                     <p>
-                        Build a strong foundation in programming using
-                        the C programming language.
+                        Build a strong foundation in programming
+                        using the C programming language.
                     </p>
 
                     <div class="course-info">
@@ -162,13 +198,14 @@
 
                     </div>
 
+
                     <ul>
 
-                        <li>Variables & Data Types</li>
+                        <li>Variables &amp; Data Types</li>
                         <li>Operators</li>
                         <li>Control Statements</li>
                         <li>Functions</li>
-                        <li>Arrays & Strings</li>
+                        <li>Arrays &amp; Strings</li>
                         <li>Pointers</li>
                         <li>Structures</li>
                         <li>File Handling</li>
@@ -179,7 +216,9 @@
 
 
 
-                <!-- C++ -->
+                <!-- =================================================
+                     COURSE 02 - C++
+                ================================================== -->
 
                 <div class="course-detail-card">
 
@@ -212,10 +251,11 @@
 
                     </div>
 
+
                     <ul>
 
                         <li>Basic C++ Programming</li>
-                        <li>Classes & Objects</li>
+                        <li>Classes &amp; Objects</li>
                         <li>Constructors</li>
                         <li>Inheritance</li>
                         <li>Polymorphism</li>
@@ -229,7 +269,9 @@
 
 
 
-                <!-- JAVA -->
+                <!-- =================================================
+                     COURSE 03 - JAVA
+                ================================================== -->
 
                 <div class="course-detail-card">
 
@@ -262,12 +304,13 @@
 
                     </div>
 
+
                     <ul>
 
                         <li>Java Fundamentals</li>
                         <li>OOP Concepts</li>
                         <li>Exception Handling</li>
-                        <li>Arrays & Strings</li>
+                        <li>Arrays &amp; Strings</li>
                         <li>Collections</li>
                         <li>File Handling</li>
                         <li>GUI Programming</li>
@@ -279,7 +322,9 @@
 
 
 
-                <!-- PYTHON -->
+                <!-- =================================================
+                     COURSE 04 - PYTHON
+                ================================================== -->
 
                 <div class="course-detail-card">
 
@@ -296,8 +341,8 @@
                     </h3>
 
                     <p>
-                        Learn Python from the fundamentals to
-                        practical application development.
+                        Learn Python from the fundamentals to practical
+                        application development.
                     </p>
 
                     <div class="course-info">
@@ -312,15 +357,16 @@
 
                     </div>
 
+
                     <ul>
 
                         <li>Python Fundamentals</li>
                         <li>Functions</li>
-                        <li>Lists & Tuples</li>
-                        <li>Dictionaries & Sets</li>
+                        <li>Lists &amp; Tuples</li>
+                        <li>Dictionaries &amp; Sets</li>
                         <li>Object-Oriented Programming</li>
                         <li>File Handling</li>
-                        <li>Modules & Packages</li>
+                        <li>Modules &amp; Packages</li>
                         <li>Projects</li>
 
                     </ul>
@@ -329,7 +375,9 @@
 
 
 
-                <!-- WEB -->
+                <!-- =================================================
+                     COURSE 05 - WEB DEVELOPMENT
+                ================================================== -->
 
                 <div class="course-detail-card">
 
@@ -362,6 +410,7 @@
 
                     </div>
 
+
                     <ul>
 
                         <li>HTML</li>
@@ -379,7 +428,9 @@
 
 
 
-                <!-- DJANGO -->
+                <!-- =================================================
+                     COURSE 06 - DJANGO
+                ================================================== -->
 
                 <div class="course-detail-card">
 
@@ -412,6 +463,7 @@
 
                     </div>
 
+
                     <ul>
 
                         <li>Django Fundamentals</li>
@@ -429,7 +481,9 @@
 
 
 
-                <!-- DATABASE -->
+                <!-- =================================================
+                     COURSE 07 - DBMS
+                ================================================== -->
 
                 <div class="course-detail-card">
 
@@ -442,12 +496,12 @@
                     </span>
 
                     <h3>
-                        DBMS & SQL
+                        DBMS &amp; SQL
                     </h3>
 
                     <p>
-                        Understand database concepts and learn how to
-                        design and manage relational databases.
+                        Understand database concepts and learn how
+                        to design and manage relational databases.
                     </p>
 
                     <div class="course-info">
@@ -461,6 +515,7 @@
                         </span>
 
                     </div>
+
 
                     <ul>
 
@@ -479,7 +534,9 @@
 
 
 
-                <!-- DATA STRUCTURE -->
+                <!-- =================================================
+                     COURSE 08 - DATA STRUCTURES
+                ================================================== -->
 
                 <div class="course-detail-card">
 
@@ -492,7 +549,7 @@
                     </span>
 
                     <h3>
-                        Data Structures & Algorithms
+                        Data Structures &amp; Algorithms
                     </h3>
 
                     <p>
@@ -512,11 +569,12 @@
 
                     </div>
 
+
                     <ul>
 
                         <li>Arrays</li>
                         <li>Linked Lists</li>
-                        <li>Stacks & Queues</li>
+                        <li>Stacks &amp; Queues</li>
                         <li>Trees</li>
                         <li>Graphs</li>
                         <li>Searching</li>
@@ -536,17 +594,20 @@
 
 
 
-    <!-- ================= LEARNING APPROACH ================= -->
+    <!-- =====================================================
+         OUR APPROACH
+    ====================================================== -->
 
-    <section class="technology-section">
+    <section class="section technology-section">
 
         <div class="container">
 
+
             <div class="section-heading">
 
-                <p class="section-label">
+                <span class="section-label">
                     OUR APPROACH
-                </p>
+                </span>
 
                 <h2>
                     How You Will Learn
@@ -560,8 +621,11 @@
             </div>
 
 
+
             <div class="learning-grid">
 
+
+                <!-- 01 -->
 
                 <div class="learning-card">
 
@@ -581,6 +645,9 @@
                 </div>
 
 
+
+                <!-- 02 -->
+
                 <div class="learning-card">
 
                     <div class="learning-number">
@@ -599,6 +666,9 @@
                 </div>
 
 
+
+                <!-- 03 -->
+
                 <div class="learning-card">
 
                     <div class="learning-number">
@@ -616,6 +686,9 @@
 
                 </div>
 
+
+
+                <!-- 04 -->
 
                 <div class="learning-card">
 
@@ -643,7 +716,9 @@
 
 
 
-    <!-- ================= COURSE CTA ================= -->
+    <!-- =====================================================
+         START LEARNING CTA
+    ====================================================== -->
 
     <section class="project-cta">
 
@@ -651,31 +726,33 @@
 
             <div class="cta-content">
 
-                <div>
+                <span class="section-label">
+                    START LEARNING
+                </span>
 
-                    <p class="section-label">
-                        START LEARNING
-                    </p>
+                <h2>
+                    Ready to Build
+                    <br>
+                    Your Programming Skills?
+                </h2>
 
-                    <h2>
-                        Ready to Build<br>
-                        Your Programming Skills?
-                    </h2>
+                <p>
+                    Explore the courses and start learning
+                    step by step.
+                </p>
 
-                    <p>
-                        Explore the courses and start learning
-                        step by step.
-                    </p>
+
+                <div class="cta-buttons">
+
+                    <a
+                        href="contact.html"
+                        class="btn primary-btn">
+
+                        Enquire Now →
+
+                    </a>
 
                 </div>
-
-
-                <a href="contact.html"
-                   class="btn light-btn">
-
-                    Enquire Now
-
-                </a>
 
             </div>
 
@@ -685,57 +762,80 @@
 
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
     <footer class="footer">
 
-        <div class="container footer-content">
+        <div class="container">
 
-            <div>
+            <div class="footer-content">
 
-                <h2 class="footer-logo">
-                    CODIVORA
-                </h2>
+
+                <!-- BRAND -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="footer-logo">
+
+                        C<span>O</span>DIVORA
+
+                    </a>
+
+                    <p class="footer-description">
+                        Code. Create. Transform.
+                    </p>
+
+                </div>
+
+
+
+                <!-- QUICK LINKS -->
+
+                <div class="footer-links">
+
+                    <h3>
+                        Quick Links
+                    </h3>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="about.html">
+                        About
+                    </a>
+
+                    <a href="services.html">
+                        Services
+                    </a>
+
+                    <a href="projects.html">
+                        Projects
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- COPYRIGHT -->
+
+            <div class="copyright">
 
                 <p>
-                    Code. Create. Transform.
+                    © 2026 Codivora. All rights reserved.
                 </p>
 
             </div>
-
-
-            <div class="footer-links">
-
-                <a href="index.html">
-                    Home
-                </a>
-
-                <a href="about.html">
-                    About
-                </a>
-
-                <a href="services.html">
-                    Services
-                </a>
-
-                <a href="projects.html">
-                    Projects
-                </a>
-
-                <a href="contact.html">
-                    Contact
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="copyright">
-
-            <p>
-                © 2026 Codivora. All rights reserved.
-            </p>
 
         </div>
 
@@ -743,7 +843,12 @@
 
 
 
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
     <script src="js/script.js"></script>
+
 
 </body>
 
