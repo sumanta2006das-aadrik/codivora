@@ -1,10 +1,231 @@
 /* =========================================================
-   CODIVORA HOMEPAGE - NEW BUSINESS FOCUS
+   CODIVORA
+   COMPLETE MERGED STYLE SHEET
+   Software • Mobile Apps • Websites • Programming Education
    ========================================================= */
 
 
 /* =========================================================
-   HERO SERVICE HIGHLIGHTS
+   1. RESET & GLOBAL
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #172033;
+    background: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.section-heading .section-label {
+    margin-bottom: 10px;
+}
+
+.section-label {
+    display: inline-block;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #172033;
+}
+
+.section-heading p {
+    color: #6b7280;
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   2. HEADER / NAVBAR
+   ========================================================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom: 1px solid #e5e7eb;
+    backdrop-filter: blur(10px);
+}
+
+.navbar {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #172033;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-menu a {
+    position: relative;
+    color: #4b5563;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #2563eb;
+}
+
+.nav-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #2563eb;
+    transition: 0.3s ease;
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+    width: 100%;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: transparent;
+    font-size: 27px;
+    color: #172033;
+}
+
+
+/* =========================================================
+   3. HERO SECTION
+   ========================================================= */
+
+.hero {
+    background: linear-gradient(135deg, #f8fbff 0%, #ffffff 60%, #eef5ff 100%);
+    padding: 90px 0 85px;
+    overflow: hidden;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.hero-small {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.08;
+    letter-spacing: -2px;
+    color: #172033;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero-description {
+    max-width: 620px;
+    color: #5f6b7a;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   4. HERO SERVICE HIGHLIGHTS
    ========================================================= */
 
 .hero-services {
@@ -44,7 +265,7 @@
 
 
 /* =========================================================
-   HERO TRUST
+   5. HERO TRUST
    ========================================================= */
 
 .hero-trust {
@@ -73,8 +294,114 @@
 
 
 /* =========================================================
-   HERO CARD CAPTION
+   6. BUTTONS
    ========================================================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 45px;
+    padding: 11px 22px;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.primary-btn {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+}
+
+.secondary-btn {
+    background: #ffffff;
+    color: #172033;
+    border-color: #d1d5db;
+}
+
+.secondary-btn:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+    transform: translateY(-2px);
+}
+
+.light-btn {
+    background: #ffffff;
+    color: #172033;
+    border-color: #ffffff;
+}
+
+.light-btn:hover {
+    background: transparent;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   7. HERO CODE WINDOW
+   ========================================================= */
+
+.hero-card {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+}
+
+.code-window {
+    overflow: hidden;
+    background: #111827;
+    border-radius: 13px;
+    border: 1px solid #273244;
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.18);
+}
+
+.window-header {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 13px 16px;
+    background: #1f2937;
+    border-bottom: 1px solid #374151;
+}
+
+.window-header span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #6b7280;
+}
+
+.code-content {
+    padding: 28px;
+    min-height: 300px;
+    color: #d1d5db;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.keyword {
+    color: #60a5fa;
+}
+
+.function {
+    color: #93c5fd;
+}
+
+.indent {
+    padding-left: 25px;
+}
 
 .hero-card-caption {
     display: flex;
@@ -92,8 +419,50 @@
 
 
 /* =========================================================
-   INTRO CARD LINK
+   8. INTRODUCTION SECTION
    ========================================================= */
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.intro-content h2 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    color: #667085;
+    margin-bottom: 15px;
+}
+
+.intro-card {
+    padding: 35px;
+    border: 1px solid #e3e7ef;
+    border-radius: 12px;
+    background: #f8fafc;
+}
+
+.intro-number {
+    font-size: 45px;
+    line-height: 1;
+    color: #2563eb;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.intro-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.intro-card p {
+    color: #6b7280;
+}
 
 .card-link {
     display: inline-block;
@@ -111,8 +480,50 @@
 
 
 /* =========================================================
-   SERVICE TAG
+   9. SERVICES
    ========================================================= */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    padding: 32px;
+    background: #ffffff;
+    border: 1px solid #e3e7ef;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: #cbd5e1;
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    background: #eff6ff;
+    font-size: 26px;
+}
+
+.service-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #6b7280;
+    font-size: 14px;
+}
 
 .service-tag {
     display: block;
@@ -125,8 +536,67 @@
 
 
 /* =========================================================
-   COURSE CARD
+   10. TECHNOLOGY SECTION
    ========================================================= */
+
+.technology-section {
+    background: #f8fafc;
+}
+
+.technology-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.technology-item {
+    padding: 25px 20px;
+    background: #ffffff;
+    border: 1px solid #e3e7ef;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.technology-item:hover {
+    transform: translateY(-4px);
+    border-color: #2563eb;
+}
+
+.technology-item h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.technology-item p {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   11. COURSES
+   ========================================================= */
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.course-card {
+    position: relative;
+    padding: 32px;
+    border: 1px solid #e3e7ef;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+}
 
 .course-number {
     display: inline-block;
@@ -135,6 +605,16 @@
     font-weight: 800;
     letter-spacing: 1px;
     margin-bottom: 18px;
+}
+
+.course-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.course-card p {
+    color: #6b7280;
+    font-size: 14px;
 }
 
 .course-card a {
@@ -151,9 +631,42 @@
     transform: translateX(3px);
 }
 
+.center-button {
+    text-align: center;
+    margin-top: 35px;
+}
+
 
 /* =========================================================
-   HOME PROJECT GRID
+   12. WHY CODIVORA
+   ========================================================= */
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.why-card {
+    padding: 28px;
+    border: 1px solid #e3e7ef;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.why-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   13. HOME PROJECT GRID
    ========================================================= */
 
 .home-project-grid {
@@ -200,8 +713,510 @@
 
 
 /* =========================================================
-   CTA BUTTONS
+   14. PAGE HERO
    ========================================================= */
+
+.page-hero {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #f8fbff, #eef5ff);
+}
+
+.page-hero h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 15px;
+}
+
+.page-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   15. ABOUT PAGE
+   ========================================================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 18px;
+}
+
+.about-text p {
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+.about-card {
+    padding: 35px;
+    border-radius: 12px;
+    background: #f8fafc;
+    border: 1px solid #e3e7ef;
+}
+
+.about-card h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    color: #6b7280;
+}
+
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.focus-card {
+    padding: 30px;
+    border: 1px solid #e3e7ef;
+    border-radius: 12px;
+}
+
+.focus-card h3 {
+    margin-bottom: 10px;
+}
+
+.focus-card p {
+    color: #6b7280;
+}
+
+.vision-section {
+    background: #f8fafc;
+}
+
+.vision-section .section-heading {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   16. SERVICES PAGE
+   ========================================================= */
+
+.service-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.service-detail-card {
+    padding: 35px;
+    border: 1px solid #e3e7ef;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.large-service-icon {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.service-number {
+    display: block;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.service-detail-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.service-detail-card p {
+    color: #6b7280;
+}
+
+.tech-stack-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.tech-stack-item {
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #e3e7ef;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.tech-stack-item h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.tech-stack-item p {
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.process-card {
+    padding: 25px;
+    border: 1px solid #e3e7ef;
+    border-radius: 10px;
+}
+
+.process-number {
+    font-size: 30px;
+    font-weight: 900;
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.process-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.process-card p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   17. COURSES PAGE
+   ========================================================= */
+
+.course-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.course-detail-card {
+    padding: 35px;
+    border: 1px solid #e3e7ef;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.course-icon {
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.course-level {
+    color: #2563eb;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.course-info h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.course-info p {
+    color: #6b7280;
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.learning-card {
+    padding: 28px;
+    border: 1px solid #e3e7ef;
+    border-radius: 10px;
+}
+
+.learning-number {
+    font-size: 30px;
+    font-weight: 900;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.learning-card h3 {
+    margin-bottom: 8px;
+}
+
+.learning-card p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   18. PROJECTS PAGE
+   ========================================================= */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    overflow: hidden;
+    border: 1px solid #e3e7ef;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+.project-visual {
+    min-height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    font-size: 55px;
+}
+
+.project-content {
+    padding: 28px;
+}
+
+.project-category {
+    display: inline-block;
+    color: #2563eb;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.project-content h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.project-tech {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #475569;
+    font-weight: 700;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.project-category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-category-card {
+    padding: 30px;
+    border: 1px solid #e3e7ef;
+    border-radius: 12px;
+}
+
+.project-category-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-category-card p {
+    color: #6b7280;
+}
+
+.future-project {
+    background: #f8fafc;
+}
+
+
+/* =========================================================
+   19. CONTACT PAGE
+   ========================================================= */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 45px;
+    align-items: start;
+}
+
+.contact-information h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact-information > p {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.contact-item h3 {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.contact-item p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.contact-form-card {
+    padding: 35px;
+    border: 1px solid #e3e7ef;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #374151;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+    background: #ffffff;
+    color: #172033;
+    transition: 0.3s ease;
+}
+
+.form-group textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.form-submit {
+    width: 100%;
+}
+
+.form-message {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 7px;
+    background: #f8fafc;
+    color: #475569;
+    font-size: 13px;
+}
+
+.quick-contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.quick-contact-card {
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #e3e7ef;
+    border-radius: 10px;
+}
+
+.quick-contact-card h3 {
+    margin-bottom: 8px;
+}
+
+.quick-contact-card p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   20. CTA SECTION
+   ========================================================= */
+
+.project-cta {
+    padding: 75px 0;
+    background: #172033;
+    color: #ffffff;
+}
+
+.cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.cta-content h2 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.cta-content p {
+    max-width: 650px;
+    color: #cbd5e1;
+}
 
 .cta-buttons {
     display: flex;
@@ -224,22 +1239,140 @@
 
 
 /* =========================================================
-   FOOTER DESCRIPTION
+   21. FOOTER
    ========================================================= */
+
+.footer {
+    padding: 55px 0 25px;
+    background: #0f172a;
+    color: #ffffff;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr 0.6fr;
+    gap: 45px;
+    padding-bottom: 35px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.footer-logo span {
+    color: #60a5fa;
+}
+
+.footer p {
+    color: #94a3b8;
+    font-size: 14px;
+}
 
 .footer-description {
     max-width: 400px;
     margin-top: 10px;
 }
 
+.footer h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer-links a {
+    color: #94a3b8;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    transform: translateX(2px);
+}
+
+.copyright {
+    padding-top: 22px;
+    border-top: 1px solid #1e293b;
+    text-align: center;
+    color: #64748b;
+    font-size: 12px;
+}
+
 
 /* =========================================================
-   TABLET
+   22. GENERAL CARD HOVER
+   ========================================================= */
+
+.service-card,
+.course-card,
+.why-card,
+.focus-card,
+.project-category-card,
+.learning-card,
+.quick-contact-card,
+.tech-stack-item,
+.technology-item {
+    transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   23. TABLET - 1000px
    ========================================================= */
 
 @media (max-width: 1000px) {
 
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .hero-text {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
     .hero-services {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-card {
+        margin: 0 auto;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .technology-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .why-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -247,14 +1380,54 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .tech-stack-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
 /* =========================================================
-   SMALL LAPTOP / TABLET
+   24. SMALL LAPTOP / TABLET - 900px
    ========================================================= */
 
 @media (max-width: 900px) {
+
+    .nav-menu {
+        gap: 18px;
+    }
+
+    .intro-grid,
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-card {
+        max-width: 600px;
+    }
+
+    .focus-grid,
+    .learning-grid,
+    .quick-contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-detail-grid,
+    .course-detail-grid {
+        grid-template-columns: 1fr;
+    }
 
     .hero-services {
         max-width: 600px;
@@ -270,11 +1443,116 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .cta-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 
 /* =========================================================
-   MOBILE
+   25. MOBILE - 700px
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .navbar {
+        min-height: 65px;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 65px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 15px 5%;
+        background: #ffffff;
+        border-bottom: 1px solid #e5e7eb;
+        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu a {
+        width: 100%;
+        padding: 13px 0;
+        border-bottom: 1px solid #f1f5f9;
+    }
+
+    .nav-menu a::after {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero {
+        padding: 65px 0;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+        letter-spacing: -1px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .services-grid,
+    .course-grid,
+    .technology-grid,
+    .why-grid,
+    .project-grid,
+    .focus-grid,
+    .learning-grid,
+    .quick-contact-grid,
+    .project-category-grid,
+    .tech-stack-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-hero {
+        padding: 60px 0;
+    }
+
+    .page-hero h1 {
+        font-size: 38px;
+    }
+
+    .cta-content h2 {
+        font-size: 30px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+
+/* =========================================================
+   26. MOBILE - 650px
    ========================================================= */
 
 @media (max-width: 650px) {
@@ -318,14 +1596,30 @@
         text-align: center;
     }
 
+    .hero-card-caption {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form-card {
+        padding: 25px;
+    }
 }
 
 
 /* =========================================================
-   VERY SMALL DEVICES
+   27. VERY SMALL DEVICES - 400px
    ========================================================= */
 
 @media (max-width: 400px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
 
     .hero-services {
         grid-template-columns: 1fr;
@@ -335,4 +1629,30 @@
         justify-content: flex-start;
     }
 
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .intro-card,
+    .service-card,
+    .course-card,
+    .why-card,
+    .home-project-card,
+    .service-detail-card,
+    .course-detail-card {
+        padding: 25px;
+    }
+
+    .page-hero h1 {
+        font-size: 32px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
 }
